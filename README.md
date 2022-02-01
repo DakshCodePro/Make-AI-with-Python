@@ -40,7 +40,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 engine.setProperty('rate',180)
 
-# write the moudle
+
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
