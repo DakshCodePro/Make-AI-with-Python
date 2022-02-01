@@ -34,7 +34,7 @@ import keyboard
 # for time sleep
 import time  
 
-# make engine to speak id [0] for david voice
+# make engine to speak
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
@@ -45,10 +45,9 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
  
-# for wish 
+ # for wish 
  
-def wishMe():
-
+ def wishMe():
    hour  = int(datetime.datetime.now().hour)
    if hour>=0 and hour<12:
         speak("good morning!")
